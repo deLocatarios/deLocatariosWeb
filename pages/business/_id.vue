@@ -2,7 +2,7 @@
   <div>
     <div v-if="$fetchState.pending">Cargando ...</div>
     <div v-else>
-      <Cover  :title=business.name :cover_image=business.cover.url></Cover>
+      <Cover  :title=business.name ></Cover>
       <el-row class="body-business">
         <el-col :md="16">
 
