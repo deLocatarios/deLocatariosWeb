@@ -13,7 +13,7 @@
           <el-divider></el-divider>
           <h4>Categorías</h4>
           <el-row class="business-categories">
-            <el-button type="primary" v-for="category in business.categories">{{ category.name}}</el-button>
+            <el-button type="primary" v-for="category in business.categories">{{ category.name }}</el-button>
           </el-row>
         </el-card>
 
