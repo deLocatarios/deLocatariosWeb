@@ -46,7 +46,7 @@
           </el-card>
 
           <el-card class="box-card">
-            <h4>Horario</h4>
+            <h4>Horarios</h4>
           </el-card>
 
           <el-card class="box-card">
