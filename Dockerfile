@@ -9,6 +9,6 @@ COPY package.json ${APP_ROOT}
 RUN npm install
 
 ADD . ${APP_ROOT}
-RUN npm run build
+RUN npm run generate
 
 ENV HOST 0.0.0.0
