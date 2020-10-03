@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Hola Mundo</p>
+    <p>{{ oki }}</p>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
   export default {
     data(){
       return{
-
+        oki: process.env.URL_BACKEND
       }
     }
   }

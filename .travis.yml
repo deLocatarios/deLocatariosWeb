@@ -6,6 +6,9 @@ cache:
     - "node_modules"
 script:
   - echo "Deploy don pale project"
+env:
+  global:
+    - URL_BACKEND=http://delocatarios.com:1335
 install:
   - npm install
   - npm i -g firebase-tools
