@@ -8,7 +8,7 @@ script:
   - echo "Deploy don pale project"
 env:
   global:
-    - URL_BACKEND=http://delocatarios.com:1335
+    - URL_BACKEND=http://delocatarios.com:1337
 install:
   - npm install
   - npm i -g firebase-tools
