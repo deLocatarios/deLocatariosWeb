@@ -8,7 +8,7 @@
   export default {
     data(){
       return{
-        oki: process.env.URL_BACKEND
+        oki: process.env.backend
       }
     }
   }

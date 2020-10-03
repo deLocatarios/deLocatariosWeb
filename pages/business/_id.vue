@@ -82,6 +82,7 @@
     },
     async fetch () {
       try {
+        console.log(process.env.backend, this.$route.params.id)
         this.business = await this.$strapi.findOne('businesses', this.$route.params.id);
       } catch (error) {
         console.log("error", error)
