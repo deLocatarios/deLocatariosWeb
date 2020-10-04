@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        Muy pronto
+        Muy pronto disponible
       </h1>
       <div class="links">
         <a
