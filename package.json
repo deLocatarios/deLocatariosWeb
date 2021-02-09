@@ -14,9 +14,12 @@
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "@nuxtjs/strapi": "^0.1.6",
     "element-ui": "^2.13.2",
-    "nuxt": "^2.14.0"
+    "jquery": "^3.5.1",
+    "nuxt": "^2.14.0",
+    "vue-slick": "^1.1.16"
   },
   "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2"
   }

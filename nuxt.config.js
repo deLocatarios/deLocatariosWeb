@@ -3,7 +3,7 @@ export default {
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
   */
-  mode: 'universal',
+  ssr: false,
   /*
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
@@ -31,14 +31,21 @@ export default {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    '~/assets/scss/document.scss',
+    '~/assets/scss/colors.scss',
+    '~/assets/scss/general.scss',
   ],
+  styleResources: {
+    scss: ['./assets/scss/*.scss']
+  },
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    { src: "~plugins/slick-slide.js", ssr: false }
   ],
   /*
   ** Auto import components
@@ -59,12 +66,9 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
-    '@nuxtjs/strapi'
+    '@nuxtjs/strapi',
+    '@nuxtjs/style-resources'
   ],
-  strapi: {
-    entities: ['business', 'categories'],
-    url: process.env.URL_BACKEND
-  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
