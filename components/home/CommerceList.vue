@@ -14,9 +14,9 @@
                   </div>
                   <div class="commerce-products">
                     <el-row type="flex" align="middle">
-                      <el-col span="8"><div class="product" :style="{ backgroundImage: `url(${commerce_demo_logo})` }"></div></el-col>
-                      <el-col span="8"><div class="product" :style="{ backgroundImage: `url(${commerce_demo_logo})` }"></div></el-col>
-                      <el-col span="8"><div class="product" :style="{ backgroundImage: `url(${commerce_demo_logo})` }"></div></el-col>
+                      <el-col :sm="8"><div class="product" :style="{ backgroundImage: `url(${commerce_demo_logo})` }"></div></el-col>
+                      <el-col :sm="8"><div class="product" :style="{ backgroundImage: `url(${commerce_demo_logo})` }"></div></el-col>
+                      <el-col :sm="8"><div class="product" :style="{ backgroundImage: `url(${commerce_demo_logo})` }"></div></el-col>
                     </el-row>
                   </div>
                   <div class="commerce-url">
@@ -25,7 +25,7 @@
                 </div>
               </slick-slide>
               <div v-if="commerces.length > 4">
-                <div class="before-row slider-rows" @click="prev"></div>
+                <div class="before-row slider-rows" @click="prev"></div>Search
                 <div class="after-row slider-rows" @click="next"></div>
               </div>
             </div>

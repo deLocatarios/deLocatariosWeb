@@ -18,7 +18,7 @@
           </div>
           <div class="d-menu-line">
             <el-row>
-              <el-col :sm="4">Inicio</el-col>
+              <el-col :sm="4"><NuxtLink to="/">Inicio</NuxtLink></el-col>
               <el-col :sm="6">
                 <el-dropdown>
                   <span class="el-dropdown-link">
@@ -33,7 +33,7 @@
               </el-col>
               <el-col :sm="4">Promociones</el-col>
               <el-col :sm="4">Contacto</el-col>
-              <el-col :sm="4">Ayuda</el-col>
+              <el-col :sm="4"><NuxtLink to="/list">Ayuda</NuxtLink></el-col>
             </el-row>
           </div>
         </el-col>

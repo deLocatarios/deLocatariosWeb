@@ -35,7 +35,8 @@
           dots: true,
           fade: false,
           speed: 1500,
-          autoplaySpeed: 5000,
+          autoplaySpeed: 15000,
+          autoplay: true,
           slidesToShow: 1,
           slidesToScroll: 1,
         }

@@ -20,12 +20,11 @@
                <el-col :sm="8" :offset="1">
                  <div class="btn-search-dropdown">
                    <p class="title">Categoría</p>
-                   <el-select v-model="value" filterable placeholder="Busca una categoría">
+                   <el-select v-model="category" filterable placeholder="Busca una categoría">
                      <el-option
-                       v-for="item in options"
-                       :key="item.value"
-                       :label="item.label"
-                       :value="item.value">
+                       v-for="category in categories"
+                       :key="category.key"
+                       :value="category.value">
                      </el-option>
                    </el-select>
                  </div>
@@ -49,7 +48,14 @@
       data(){
           return{
             location: "",
+            category: "",
             locations: [
+              {"key": "toluca", "value": "Toluca"},
+              {"key": "temoaya", "value": "Temoaya"},
+              {"key": "xonacatlan", "value": "Xonacatlán"},
+              {"key": "villa-cuauhtemoc", "value": "Villa Cuauhtémoc"},
+            ],
+            categories: [
               {"key": "toluca", "value": "Toluca"},
               {"key": "temoaya", "value": "Temoaya"},
               {"key": "xonacatlan", "value": "Xonacatlán"},

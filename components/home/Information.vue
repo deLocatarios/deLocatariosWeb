@@ -1,21 +1,21 @@
 <template>
     <div class="information">
       <div class="d-container">
-        <el-row type="flex" justify="center" align="middle">
-          <el-col>
+        <el-row>
+          <el-col :sm="8">
             <div class="info-card">
               <img src="~/assets/diseno/information/location.png" alt="">
               <p>Encuentra los mejores lugares y servicios dentro de más de 20 Localidades que de Locatarios
                 tiene para ti.</p>
             </div>
           </el-col>
-          <el-col>
+          <el-col :sm="8">
             <div class="info-card">
               <img src="~/assets/diseno/information/categories.png" alt="">
-              <p>Contamos con 26 categorías hechas para ti. <br> ¡Encuentra lo que necesitas! </p>
+              <p>Empezamos con 26 principales categorías hechas para ti. <br> ¡Encuentra lo que necesitas! </p>
             </div>
           </el-col>
-          <el-col>
+          <el-col :sm="8">
             <div class="info-card">
               <img src="~/assets/diseno/information/people.png" alt="">
               <p>Más de mil Usuarios visitan <span class="">deLocatarios.com</span></p>
@@ -43,8 +43,9 @@
       font-weight: lighter;
       line-height: 20px;
       img{
-        padding: 50px 0;
-        max-height: 100px;
+        padding-top: 50px;
+        width: 100%;
+        max-width: 120px;
       }
       p{
         line-height: 25px;

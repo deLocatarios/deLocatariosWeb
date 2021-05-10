@@ -16,7 +16,7 @@
                     HASTA 15% EN CALENTADORES SOLARES
                   </div>
                   <div class="offer-product">
-                    <img src="~/assets/diseno/offer/coupon1.png" alt="">
+                    <img src="~/assets/diseno/demo/carro.png" alt="">
                   </div>
                   <div class="offer-btn">
                     <el-button class="btn-yellow" round>Visitar y localizar</el-button>
@@ -150,8 +150,8 @@
         font-weight: bold;
         line-height: 25px;
         max-width: 100%;
-        height: 90px;
-        max-height: 100%;
+        height: 100%;
+        max-height: 70px;
         color: darken($gray, 50);
         text-align: center;
       }
@@ -159,7 +159,7 @@
         width: 100%;
         img {
           margin: 0 auto;
-          max-height: 150px;
+          max-height: 120px;
         }
       }
       .offer-btn{

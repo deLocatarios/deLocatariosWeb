@@ -15,4 +15,9 @@
   background: $purple;
   color: $white;
   border: 1px solid $purple;
+  transition: all .5s ease;
+  &:hover{
+    background: lighten($purple, 7);
+    color: $white;
+  }
 }

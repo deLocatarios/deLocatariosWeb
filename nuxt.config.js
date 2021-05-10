@@ -45,6 +45,7 @@ export default {
   */
   plugins: [
     '@/plugins/element-ui',
+    '@/plugins/sweet-alert',
     { src: "~plugins/slick-slide.js", ssr: false }
   ],
   /*
